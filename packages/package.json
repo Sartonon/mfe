@@ -8,7 +8,7 @@
     "start-container": "cd container && npm start",
     "start-dashboard": "cd dashboard && npm start",
     "start-marketing": "cd marketing && npm start",
-    "start": "concurrently \"npm:start-container\" \"npm:start-marketing\""
+    "start": "concurrently \"npm:start-container\" \"npm:start-marketing\" \"npm:start-auth\" \"npm:start-dashboard\""
   },
   "keywords": [],
   "author": "",
