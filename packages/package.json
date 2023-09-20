@@ -1,0 +1,19 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-auth": "cd auth && npm start",
+    "start-container": "cd container && npm start",
+    "start-dashboard": "cd dashboard && npm start",
+    "start-marketing": "cd marketing && npm start",
+    "start": "concurrently \"npm:start-container\" \"npm:start-marketing\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
